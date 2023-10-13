@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Registration</title>
+    <link rel = "Stylesheet" href = "log-reg-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comforter+Brush&family=Gochi+Hand&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "background">
+
+    </div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo">
+                <ion-icon class = "head-icon-1" name="bookmark"></ion-icon>
+                EventPro
+                <h2 class = "logo-2">
+                    <ion-icon class = "head-icon-2" name="navigate-circle-outline"></ion-icon> 
+                </h2>
+            </h2>
+            <div class="text-item">
+                <h2>
+                    Welcome! 
+                    <span>
+                        Introducing EventPro: Your Gateway to Seamless Event Management
+                    </span>
+                </h2>
+                <p>
+                    Create an account to access the full website and enjoy convenient event registration, real-time updates, and personalized experiences. Say goodbye to manual processes and hello to effortless event management with EventPro.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="login-section">
+            <div class="form-box login">
+                <form action = "/login" method="post">
+                    <h2>
+                        Sign In
+                    </h2>
+                    <div class = "input-box">
+                        <span class = "icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input class = "input-user" type = "email" required>
+                        <label class = "label-user" for=""> Email</label>
+                    </div>
+                    <div class = "input-box">
+                        <span class = "icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input class = "input-user" type = "password" required>
+                        <label class = "label-user" for="">Password</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for = "">
+                            <input type = "checkbox">
+                            Remember
+                        </label>
+                        <a href="#">
+                            Forget Password
+                        </a>
+                    </div>
+                    <button class = "btn">
+                        Login
+                    </button>
+                    <div class = "create-account">
+                        <p>
+                            Create A New Account? <a href = "#" class = "register-link">Sign Up</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- ... previous HTML code ... -->
+
+            <div class="form-box register">
+                <form action="/register" method="post">
+                    <!-- Add 'name' attributes to input fields -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <input class="input-user" type="text" name="username" required>
+                        <label class="label-user" for="username">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <input class="input-user" type="email" name="email" required>
+                        <label class="label-user" for="email">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input class="input-user" type="password" name="password" required>
+                        <label class="label-user" for="password">Password</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for="">
+                            <input type="checkbox">
+                            I agree to this term
+                        </label>
+                    </div>
+                    <button class="btn" type="submit">Sign Up</button>
+                    <div class="create-account">
+                        <p>
+                            Already Have An Account? <a href="#" class="login-link">Sign In</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+<!-- ... rest of your HTML code ... -->
+
+
+        </div>
+
+    </div>
+    <a href = "home.html">
+    <div class = "back-icon-mother">
+        <ion-icon class = "back-icon" name="arrow-back-outline"></ion-icon>
+    </div>
+    </a>
+
+
+
+    <script src = "log-reg-js.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
